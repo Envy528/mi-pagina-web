@@ -1,133 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mí</title>
-    <style>
-        body{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            background-color: #e7e7e7;
-            margin: 0px;
-            padding: 20px
-        }
-        .contenedor{
-            background-color: #ffffff;
-            width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            border-radius: 16px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
-        }
-        h1{
-            text-align: center;
-            color: black;
-        }
-        label{
-            display: block;
-            margin: 10px 0px 5px;
-            font-weight: bold;
-        }
-        input, textarea, select{
-            width: 95%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 2px solid #ccc;
-            border-radius: 5px;
-        }
-        
-        input[type="submit"]{
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-
-        table{
-            margin: auto;
-            margin-bottom: 10px;
-
-        }
-    </style>
+    <title>Mi pagina web</title>
+    <!--Vinculación de estilos-->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1>Hoja de vida</h1>
-        <h2>Introducción</h2>
-        <p>Esta pagina esta destinada para mostrar mi hoja de vida, mostrando quien soy y mi experiencia</p>
+    <!--Header-->
+    <header>
+        <h1>Mi Pagina Web</h1>
+        <h2>Jorge Carmona</h2>
+
+    </header>
+
+    <!--Navegación de mi página-->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#redes">Redes IUB</a>
+        <a href="#pasatiempos">Pasatiempos</a>
+        <a href="#tareas_pendientes">Tareas</a>
+        <a href="#horario">Horario</a>
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+    <!--Contenido principal de la página-->
+    <main>
+        <!--Contenido relacionado a la introducción del sitio-->
+        <div class="contenedor">
+            <h3>Introducción</h3>
+            <p>Esta pagina es una actividad del curso de programación de Talento Tech</p>
     
-        <h3>¿Quien Soy?</h3>
-        <p>Me llamo Jorge Carmona, soy estudiante del Instituto Universitario de Barranquilla (IUB) actualmente cursando un Técnico en Mantenimiento Eléctronico Industrial, a fin a la ingenieria mecatronica.</p>
-    </div>
-    <div>
-        <img width="300px" src="./img/Logo IUB.png" alt="Logo IUB">
-        <h3>Redes Sociales IUB</h3>
-        <ul>
-        <li><a href="https://www.facebook.com/UniBarranquilla/">Facebook</a></li>
-        <li><a href="https://www.instagram.com/UniBarranquilla_/">Instagram</a></li>
-        <li><a href="https://x.com/UniBarranquilla">X</a></li>
-        </ul>
-    </div>  
-    <div>
-    </div><h3>Mis pasatiempos</h3>
-        <ul>
-            <li>Jugar videojuegos</li>
-            <li>Escuchar música</li>
-            <li>Reparar computadores</li>
-        </ul>
-    </div>
-    
-    <div>
-        <h3>Tareas pendientes</h3>
-        <ol>
-            <li>Ordenar mi cuarto</li>
-            <li>Completar las sesiones de la pagina del curso de talentotech</li>
-            <li>Reparar las camaras del conjunto</li>
-            <li>farmear en Warframe</li>
-        </ol>
-    </div>
-    <div>
-    <table border="1">
-        <thead>
-            <tr><th>Lunes</th><th>Martes</th><th>Miercoles</th><th>Jueves</th><th>Viernes</th><th>Sabado</th><th>Domingo</th></tr>
-            
-        </thead>
-            <tbody>
-                <tr>
-                    <td>Seminario</td><td>Seminario</td><td>Seminario</td><td>Seminario</td><td>Seminario</td><td>Seminario</td><td>Reparar cámaras</td>
-                </tr>
-                <tr>
-                    <td>Farmear en Warframe</td><td>Farmear en Warframe</td><td>Ordenar mi Cuarto</td><td>Estar con mi novia</td><td>Estar con mi novia</td><td>Sesiones Talentotech</td><td>Sesiones Talentotech</td>
-                </tr>
-                <tr>
-                    <td>Dormir</td><td>Dormir</td><td>Farmear en Warframe</td><td>Dormir</td><td>Farmear en Warframe</td><td>Farmear en Warframe</td><td>Farmear en Warframe</td>
-
-                </tr>
-                <tr>
-                    <td></td><td></td><td>Dormir</td><td></td><td>Dormir</td><td>Dormir</td><td>Dormir</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!--Formulario-->
-    <div class="contenedor">
-        <h1>Formulario de contacto</h1>
-
-        <form action="#">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre_usuario" id="nombre" minlength="3" maxlength="30" required>
-
-            <label for="mensaje">Motivo de contacto:</label>
-            <textarea name="mensaje" id="mensaje" rows="4"></textarea>
-
-            <label for="correo">Correo:</label>
-            <input type="email" name="correo_usuario" id="correo">
+            <h3>¿Quien Soy?</h3>
+            <p>Me llamo Jorge Carmona, soy estudiante del Instituto Universitario de Barranquilla (IUB) actualmente cursando un Técnico en Mantenimiento Eléctronico Industrial, a fin a la ingenieria mecatronica.</p> 
+        </div>
+        <!--Redes sociales de IUB-->
+        <div class="contenedor">
+            <h3 id="redes">Redes Sociales IUB</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/UniBarranquilla/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/UniBarranquilla_/">Instagram</a></li>
+                <li><a href="https://x.com/UniBarranquilla">X (Twitter)</a></li>
+            </ul>
+            <img src="./img/Logo IUB.png" alt="Logo IUB">
+        </div>
+        <!--Mis pasatiempos-->
+        <div class="contenedor">
+            <h3 id="pasatiempos">Mis pasatiempos</h3>
+            <ul>
+                <li>Jugar videojuegos</li>
+                <li>Escuchar música</li>
+                <li>Reparar computadores</li>
+            </ul>
+        </div>
+        <!--Tareas pendientes-->
+        <div class="contenedor">
+            <h3 id="tareas_pendientes">Tareas pendientes</h3>
+            <ol>
+                <li>Ordenar mi cuarto</li>
+                <li>Completar las sesiones de la pagina del curso de talentotech</li>
+                <li>Reparar las camaras del conjunto</li>
+                <li>farmear en Warframe</li>
+            </ol>
+        </div>
+        <!--Tabla-->
+        <div class="contenedor">
+            <h3 id="horario">Horario</h3>
+            <table  border="1">
+                <thead>
+                    <tr><th>Lunes</th><th>Martes</th><th>Miercoles</th><th>Jueves</th><th>Viernes</th><th>Sabado</th><th>Domingo</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Seminario</td><td>Seminario</td><td>Seminario</td><td>Seminario</td><td>Seminario</td><td>Seminario</td><td>Reparar cámaras</td>
+                    </tr>
+                    <tr>
+                        <td>Farmear en Warframe</td><td>Farmear en Warframe</td><td>Ordenar mi Cuarto</td><td>Estar con mi novia</td><td>Estar con mi novia</td><td>Sesiones Talentotech</td><td>Sesiones Talentotech</td>
+                    </tr>
+                    <tr>
+                        <td>Dormir</td><td>Dormir</td><td>Farmear en Warframe</td><td>Dormir</td><td>Farmear en Warframe</td><td>Farmear en Warframe</td><td>Farmear en Warframe</td>
         
-            <input type="submit" value="Enviar información">
-        </form>
-    </div>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td>Dormir</td><td></td><td>Dormir</td><td>Dormir</td><td>Dormir</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Formulario-->
+        <div class="formulario">
+            <h3 id="contacto">Formulario de contacto</h3>
+    
+            <form action="#">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre_usuario" id="nombre" minlength="3" maxlength="30" required>
+    
+                <label for="mensaje">Motivo de contacto:</label>
+                <textarea name="mensaje" id="mensaje" rows="4"></textarea>
+    
+                <label for="correo">Correo:</label>
+                <input type="email" name="correo_usuario" id="correo">
+            
+                <input type="submit" value="Enviar información">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <small>Pagina creada por Jorge Carmona</small>
+    </footer>
 </body>
 </html>
